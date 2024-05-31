@@ -99,7 +99,7 @@ source activate vmtk
 
 ### Currents
 
-From the MATLAB command prompt execute the following staring from the parent directory:
+From the MATLAB command prompt execute the following starting from the parent directory:
 ```
 cd currents_build
 mex -I./ convol.c -llibfftw3-3 -L./
