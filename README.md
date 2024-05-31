@@ -6,7 +6,7 @@ Author: Georgios Rovas
 ## About
 
 
-This code generates a *standardized 2D map* of the left atrium by unfolding a 3D mesh and its variables.
+This code generates a ***standardized 2D map*** of the left atrium by unfolding a 3D mesh and its variables.
 The code can be used for any variable, such as those derived from imaging (CT, CMR, MRI, LGE-CMR),
 electrophysiological variables derived from catheterization, and hemodynamical or mechanical variables derived
 from CFD or FEM analyses.
@@ -20,15 +20,6 @@ This code was used for the following publication:
 > GR
 
 Please cite this reference when using this code.
-
-## Pipeline
-
-The pipeline is split in four parts.
-
-* run_standardization: standardizes meshes from a raw mesh. Depends on [VMTK], [VTK] and [MeshLab]
-* run_currents: registers mesh to an atlas using currents registration. Depends on [VTK], [MATLAB] and currents_build
-* run_sum: computes standardized unfold map. Depends on [VMTK] and [VTK]
-* run_quantification: computes regional quantification (extent or mean value). Depends on [VMTK] and [VTK]
 
 ## Dependencies
 
@@ -128,6 +119,14 @@ python ./main.py --meshfile ./data/test/test.vtk --datatype tavf
 ```
 Compare the generate images in the `data/test` folder with those in `data/expected_output`; they should be identical. The 3D model used for the test is a mock atrial mesh on which the following mock scalars have been added: TAWSS, Age, BV, Fibrosis. The mock 3D model colored by those scalars can be viewed in the `data/test/test$.jpg`.
 
+## Pipeline
+
+The pipeline is split in four parts.
+
+- **run_standardization**: standardizes meshes from a raw mesh. Depends on [VMTK], [VTK] and [MeshLab]
+- **run_currents**: registers mesh to an atlas using currents registration. Depends on [VTK], [MATLAB] and currents_build
+- **run_sum**: computes standardized unfold map. Depends on [VMTK] and [VTK]
+- **run_quantification**: computes regional quantification (extent or mean value). Depends on [VMTK] and [VTK]
 
 ## Usage
 
