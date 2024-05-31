@@ -67,7 +67,7 @@ Download [MeshLab 1.3.3] and install it. Update the installation location in `co
 
 ### MATLAB
 
-Download and install [MATLAB]. Install the MinGW-w64 Compiler from the MATLAB add-ons menu.
+Download and install [MATLAB]. Install the MinGW-w64 Compiler from the MATLAB add-ons menu. Update the installation location in `constants.py`.
 
 ### Python, NumPy, VMTK and VTK
 
