@@ -73,14 +73,13 @@ Download and install [MATLAB]. Install the MinGW-w64 Compiler from the MATLAB ad
 
 The easiest way to install everything you need is by using [conda]. It includes Python, NumPy, VMTK and VTK.
 
-First, download and install [conda], Anaconda or [miniconda] package:
+First, download and install [conda], anaconda or [miniconda] package:
 
 Create an environment and activate it:
 
 ```
 $ conda create --name vmtk python=3.6.4
 $ conda activate vmtk
-
 ```
 
 Install vmtk, vtk, itk and NumPy:
