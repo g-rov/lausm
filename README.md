@@ -11,13 +11,13 @@ The code can be used for any variable, such as those derived from imaging (CT, C
 electrophysiological variables derived from catheterization, and hemodynamical or mechanical variables derived
 from CFD or FEM analyses.
 
-This code was updated to utilize more recent libraries and run on Windows and Linux systems.
+This code was updated to Python 3 and it makes use of recent library updates. It has been tested on Windows and Linux systems, but usage in macOS should also be possible.
 
 This code was used for the following publication:
 
->
->
->
+> GR
+> GR
+> GR
 
 Please cite this reference when using this code.
 
@@ -48,18 +48,19 @@ The scripts in this repository were successfully run with:
 
 Clone the repository and cd into it:
 ```sh
-$ git clone https://github.com/g-rov/lausm
-$ cd lausm
+git clone https://github.com/g-rov/lausm
+cd lausm
 ```
 
 Set paths according to your system in `constants.py` if the dependencies are already installed.
-```
+```sh
 MATLAB_BIN_PATH
 CURRENTS_BUILD_PATH
 MESHLABSERVER_PATH
 ```
 
 The default parameters of the algorithm can be modified in `main.py` inside the `get_parameters()` method.
+
 
 ### Meshlab
 
@@ -77,9 +78,9 @@ First, download and install [conda], anaconda or [miniconda] package:
 
 Create an environment and activate it:
 
-```
-$ conda create --name vmtk python=3.6.4
-$ conda activate vmtk
+```sh
+conda create --name vmtk python=3.6.4
+conda activate vmtk
 ```
 
 Install vmtk, vtk, itk and NumPy:
@@ -105,10 +106,28 @@ cd currents_build
 mex -I./ convol.c -llibfftw3-3 -L./
 mex -I./ gridOptim.c -llibfftw3-3 -L./
 mex -I./ projConvol.cpp -llibfftw3-3 -L./
+```
+To test the installation run in MATLAB:
+```
 match2vtks('./test/source.vtk','./test/target.vtk','./test/output','1','0.0001')
 ```
+It should take 5-15 mins to run. Then, check in VMTK, Paraview or equivalent software that the 'output.vtk' and 'expected_output.vtk' look the same. For example, you can use the following commands in VMTK's PypePad:
+```
+vmtksurfaceviewer -ifile ./currents_build/test/output.vtk
+```
+
+If you encounter errors during this process please read `currents_build/README` for additional instructions. 
 
 If compliled with the instructions above, there is no need to change `CURRENTS_BUILD_PATH` in `constants.py`.
+
+## Test installation
+
+Run the following command: 
+```
+python ./main.py --meshfile ./data/test/test.vtk --datatype tavf
+```
+Compare the generate images in the `data/test` folder with those in `data/expected_output`; they should be identical. The 3D model used for the test is a mock atrial mesh on which the following mock scalars have been added: TAWSS, Age, BV, Fibrosis. The mock 3D model colored by those scalars can be viewed in the `data/test/test$.jpg`.
+
 
 ## Usage
 
@@ -154,39 +173,54 @@ main.py [-h] --meshfile MESHFILE --datatype DATATYPE
   --skip_quantification   Skip run_quantification step
 ```
 
-## Test data
-```
-python ./main.py --meshfile ./data/test/test.vtk --datatype tavf
-```
-
-Data was created by using a mesh from the [LASC] challenge and adding mock scalars onto it: force, lge, and lat.
-
-Run the command lines below and the PNG output should be identical to the one in `./data/expected_output`.
+The `.vtk` file used as `MESHFILE` should have a specific structure outlined below:
 
 ```
-python ./main.py --meshfile ./data/force/mock_force.vtk --datatype force
-
-python ./main.py --meshfile ./data/lge/mock_lge.vtk --datatype lge --paired_unfold_disk ./data/force/mock_force_FTI_disk_uniform.vtp
-
-python ./main.py --meshfile ./data/lat/mock_lat.vtk --datatype lat
-
-python ./main.py --meshfile ./data/lat/mock_lat.vtk --datatype lat --use_glyph --skip_standardization --skip_currents
+# vtk DataFile Version 3.0
+vtk output
+ASCII
+POINT_DATA N
+SCALARS tawss float 1
+LOOKUP_TABLE default
+{ N x 3 } table
+FIELD FieldData 3
+age 1 N float
+{ N x 1 } scalar
+bv 1 N float
+{ N x 1 } scalar
+fibr 1 N float
+{ N x 1 } scalar
 ```
+Where N is the number of points. 
 
-## Dependencies
+You may use `data/test/test.vtk` as a template. Depending on the software used to generate the `.vtk` mesh, some subsequent editing of the file in a text editing software might be required to reach the desired structure.
 
-The scripts in this repository were successfully run with:
-- [Python] 2.7.14
-- [NumPy] 1.13.3
-- [VMTK] 1.4
-- [VTK] 8.0.1
-- [MATLAB] R2017b
-- [MeshLab] 1.3
+## Hints / Troubleshooting
+
+- The `--visualize` flag is helpful while learning to use the software and for troubleshooting.
+- Press `q` to advance the visualizations.
+- If registration (currents) fails, try switching the flipping flag in `processing.py` line 227.
+- If mitral clipping is too high or too low or if the appendage is clipped, adjust the added radius in `SUM_utils.py` line 831.
+
+## Outdated usage
+
+The following usage of the code is maintained for compatibility purposes: 
+```
+python ./main.py --meshfile ./data/outdated/force/mock_force.vtk --datatype force
+
+python ./main.py --meshfile ./data/outdated/lge/mock_lge.vtk --datatype lge --paired_unfold_disk ./data/outdated/force/mock_force_FTI_disk_uniform.vtp
+
+python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat
+
+python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat --use_glyph --skip_standardization --skip_currents
+```
+It can be used to generate overlayed ("paired") plot and scatter ("glyph") plots. 
 
 ## Version History
 
 v2. https://github.com/g-rov/lausm
 
+> GR
 
 
 v1. https://github.com/catactg/sum
@@ -199,7 +233,7 @@ Please cite these reference when using this code.
 
 ## License
 
-BSD 2-Clause
+BSD 3-Clause
 
 
 
