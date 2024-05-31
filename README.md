@@ -48,7 +48,7 @@ The scripts in this repository were successfully run with:
 
 Clone the repository and cd into it:
 ```sh
-$ git clone https://github.com/
+$ git clone https://github.com/g-rov/lausm
 $ cd lausm
 ```
 
@@ -185,7 +185,7 @@ The scripts in this repository were successfully run with:
 
 ## Version History
 
-v2. https://github.com/
+v2. https://github.com/g-rov/lausm
 
 
 
