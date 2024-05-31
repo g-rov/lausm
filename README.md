@@ -26,7 +26,7 @@ Please cite this reference when using this code.
 The pipeline is split in four parts.
 
 * run_standardization: standardizes meshes from a raw mesh. Depends on [VMTK], [VTK] and [MeshLab]
-* run_currents: registers mesh to an atlas using currents registration. Depends on [VTK], [MATLAB] and ./currents_build
+* run_currents: registers mesh to an atlas using currents registration. Depends on [VTK], [MATLAB] and currents_build
 * run_sum: computes standardized unfold map. Depends on [VMTK] and [VTK]
 * run_quantification: computes regional quantification (extent or mean value). Depends on [VMTK] and [VTK]
 
