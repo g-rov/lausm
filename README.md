@@ -213,3 +213,5 @@ BSD 2-Clause
 [MeshLab 1.3.3]:https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20v1.3.3/
 [conda]:https://conda.io/docs/
 [Miniconda]:https://docs.anaconda.com/free/miniconda/
+[ITK]:https://itk.org/
+[FFTW]:https://www.fftw.org/
