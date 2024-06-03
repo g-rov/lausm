@@ -105,13 +105,13 @@ It should take 5-15 mins to run. Then, check in VMTK, Paraview or equivalent sof
 vmtksurfaceviewer -ifile ./currents_build/test/output.vtk
 ```
 
-If you encounter errors during this process please read `currents_build/README` for additional instructions. 
+If you encounter errors during this process please read `currents_build/README` for additional instructions.
 
 If compliled with the instructions above, there is no need to change `CURRENTS_BUILD_PATH` in `constants.py`.
 
 ## Test installation
 
-Run the following command: 
+Run the following command:
 ```
 python ./main.py --meshfile ./data/test/test.vtk --datatype tavf
 ```
@@ -188,7 +188,7 @@ bv 1 N float
 fibr 1 N float
 { N x 1 } scalar
 ```
-Where N is the number of points. 
+Where N is the number of points.
 
 You may use `data/test/test.vtk` as a template. Depending on the software used to generate the `.vtk` mesh, some subsequent editing of the file in a text editing software might be required to reach the desired structure.
 
@@ -201,7 +201,7 @@ You may use `data/test/test.vtk` as a template. Depending on the software used t
 
 ## Outdated usage
 
-The following usage of the code is maintained for compatibility purposes: 
+The following usage of the code is maintained for compatibility purposes:
 ```
 python ./main.py --meshfile ./data/outdated/force/mock_force.vtk --datatype force
 
@@ -211,7 +211,7 @@ python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat
 
 python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat --use_glyph --skip_standardization --skip_currents
 ```
-It can be used to generate overlayed ("paired") plot and scatter ("glyph") plots. 
+It can be used to generate overlayed ("paired") plot and scatter ("glyph") plots.
 
 ## Version History
 
