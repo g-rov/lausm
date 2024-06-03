@@ -6,14 +6,14 @@ Author: Georgios Rovas
 ## About
 
 
-This code generates a ***standardized 2D map*** of the left atrium by unfolding a 3D mesh and its variables.
+This software generates a ***standardized 2D map*** of the left atrium by unfolding a 3D mesh and its variables.
 The code can be used for any variable, such as those derived from imaging (CT, CMR, MRI, LGE-CMR),
 electrophysiological variables derived from catheterization, and hemodynamical or mechanical variables derived
 from CFD or FEM analyses.
 
-This code was updated to Python 3 and it makes use of recent library updates. It has been tested on Windows and Linux systems, but usage in macOS should also be possible.
+The code was updated to Python 3 and it makes use of recent library updates. It has been tested on Windows and Linux systems, but usage in macOS should also be possible.
 
-This code was used for the following publication:
+This software was used for the following publication:
 
 > GR
 
