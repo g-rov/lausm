@@ -1,0 +1,4 @@
+*.pyc
+.DS_Store
+data/.DS_Store
+./mock_models
