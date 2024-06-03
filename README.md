@@ -115,7 +115,7 @@ Run the following command:
 ```
 python ./main.py --meshfile ./data/test/test.vtk --datatype tavf
 ```
-Compare the generate images in the `data/test` folder with those in `data/expected_output`; they should be identical. The 3D model used for the test is a mock atrial mesh on which the following mock scalars have been added: TAWSS, Age, BV, Fibrosis. The mock 3D model colored by those scalars can be viewed in the `data/test/test$.jpg`.
+Compare the generate images in the `data/test` folder with those in `data/expected_output`; they should be identical. The 3D model used for the test is a mock atrial mesh on which the following mock scalars have been added: TAWSS, Age, BV, Fibrosis. The mock 3D model colored by those scalars can be viewed in the `data/test/test_*.png`.
 
 ## Pipeline
 
@@ -211,7 +211,7 @@ python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat
 
 python ./main.py --meshfile ./data/outdated/lat/mock_lat.vtk --datatype lat --use_glyph --skip_standardization --skip_currents
 ```
-It can be used to generate overlayed ("paired") plot and scatter ("glyph") plots.
+It can be used to generate overlayed contour+line plots ("paired") and scatterplots ("glyph").
 
 ## Version History
 
