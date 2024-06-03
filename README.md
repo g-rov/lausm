@@ -16,8 +16,6 @@ This code was updated to Python 3 and it makes use of recent library updates. It
 This code was used for the following publication:
 
 > GR
-> GR
-> GR
 
 Please cite this reference when using this code.
 
