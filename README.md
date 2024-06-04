@@ -217,9 +217,14 @@ It can be used to generate overlayed contour+line plots ("paired") and scatterpl
 
 v2. https://github.com/g-rov/lausm
 
-The code was updated to Python 3. The libraries and dependencies were updated to recent versions.
-
 > GR
+
+Changelog: 
+- Added Windows support.
+- The code was updated to Python 3.
+- The libraries and dependencies were updated to recent versions.
+- Added multiple scalar field support and export options.
+- Fixed consistensy of plots.
 
 
 v1. https://github.com/catactg/sum
