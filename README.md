@@ -140,9 +140,10 @@ main.py [-h] --meshfile MESHFILE --datatype DATATYPE
 
   -h, --help              show this help message and exit
   --meshfile MESHFILE     Full path to mesh file in VTK format
-  --datatype DATATYPE     Data type to process: tavf | force | lge | lat
+  --datatype DATATYPE     Data type to process: tavf | scalar | force | lge | lat
                           TAVF: (T)ime-averaged wall shear stress, (A)ge of blood,
                           bipolar (V)oltage, and (F)ibrosis
+                          Scalar: Generic type used for a single scalar field
                           Force|LGE|LAT: Older datatypes for catheter contact force,
                           LGE-CMR and local activation time.  
   --pvcliptype PVCLIPTYPE How to clip the pulmonary veins: short | long
@@ -219,7 +220,7 @@ v2. https://github.com/g-rov/lausm
 
 > GR
 
-Changelog: 
+Changelog:
 - Added Windows support.
 - The code was updated to Python 3.
 - The libraries and dependencies were updated to recent versions.
