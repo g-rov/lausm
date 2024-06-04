@@ -11,15 +11,15 @@ The code can be used for any variable, such as those derived from imaging (CT, C
 electrophysiological variables derived from catheterization, and hemodynamical or mechanical variables derived
 from CFD or FEM analyses.
 
-The code was updated to Python 3 and it makes use of recent library updates. It has been tested on Windows and Linux systems, but usage in macOS should also be possible.
-
 This software was used for the following publication:
 
 > GR
 
-Please cite this reference when using this code.
+Please cite this reference if you are using the software.
 
 ## Dependencies
+
+The software has been tested on Windows and Linux systems. Usage in macOS should also be possible by installing/compiling the necessary dependencies.
 
 The scripts in this repository were successfully run with:
 - [Python] 3.6.4
@@ -216,6 +216,8 @@ It can be used to generate overlayed contour+line plots ("paired") and scatterpl
 ## Version History
 
 v2. https://github.com/g-rov/lausm
+
+The code was updated to Python 3. The libraries and dependencies were updated to recent versions.
 
 > GR
 
