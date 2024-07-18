@@ -1,6 +1,7 @@
 *.pyc
 .DS_Store
 data/.DS_Store
-./mock_models
+mock_models/
 __pycache__/
 *.mexw64
+commands.txt

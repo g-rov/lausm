@@ -13,7 +13,7 @@ from CFD or FEM analyses.
 
 This software was used for the following publication:
 
-> GR
+> Left atrial wall shear stress distribution correlates with atrial endocardial electrogram voltage and fibrosis in patients with atrial fibrillation. Adamopoulos, D., Rovas, G., Johner, N., Müller, H., Deux, J.-F., Crowe, L.A., Vallée, J.-P., Mach, F., Stergiopulos, N., Shah, D. 2024. medRxiv 2024.07.11.24310174. https://doi.org/10.1101/2024.07.11.24310174
 
 Please cite this reference if you are using the software.
 
@@ -218,7 +218,7 @@ It can be used to generate overlayed contour+line plots ("paired") and scatterpl
 
 v2. https://github.com/g-rov/lausm
 
-> GR
+> Left atrial wall shear stress distribution correlates with atrial endocardial electrogram voltage and fibrosis in patients with atrial fibrillation. Adamopoulos, D., Rovas, G., Johner, N., Müller, H., Deux, J.-F., Crowe, L.A., Vallée, J.-P., Mach, F., Stergiopulos, N., Shah, D. 2024. medRxiv 2024.07.11.24310174. https://doi.org/10.1101/2024.07.11.24310174
 
 Changelog:
 - Added Windows support.
