@@ -234,7 +234,7 @@ v1. https://github.com/catactg/sum
 > Williams SE, Tobon-Gomez C, Zuluaga MA, Chubb H, Butakoff C, Karim R, Ahmed E, Camara O, Rhode KS.
 > J Interv Card Electrophysiol. 2017 Sep 7. doi: 10.1007/s10840-017-0281-3.
 
-Please cite these reference when using this code.
+Please cite these references when using this code.
 
 ## License
 
