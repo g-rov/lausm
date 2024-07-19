@@ -4,7 +4,7 @@ ExoShape is a derived software by Stanley Durrleman, Copyright (C) INRIA (Asclep
 
 ## Installation
 
-For installation notes please see the instuction on the [README](https://github.com/g-rov/lausm/blob/main/README.md) file of the repository (`lausm/README.md`). If these instructions don't work, please follow the alternative installation method listed below. 
+To install ExoShape (a.k.a. "currents") please see the instuctions on the [README](https://github.com/g-rov/lausm/blob/main/README.md) file of the repository (`lausm/README.md`). If these instructions don't work, please follow the alternative installation method listed below. 
 
 The core of the registration algorithm is coded in MATLAB(R) and can be run on MATLAB(R) version 7.1 or higher. Optimization routines are coded as mex-files and therefore must be compiled. Optimization based on FFTs must be linked with fftw3 library distributed under the GNU GPL license at www.fftw.org. The fftw3 library is included in the `currents_build` folder. If the pre-included library is not working or if the use an alternative fftw3 library is desired, please download it from the [FFTW](https://www.fftw.org/) website. 
 
