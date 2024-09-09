@@ -1,5 +1,6 @@
 # Left Atrial Unfolding to a Standardized 2D Map
 
+![plot](./img/cover.png)
 
 Author: Georgios Rovas
 
