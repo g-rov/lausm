@@ -1,6 +1,6 @@
 # Left Atrial Unfolding to a Standardized 2D Map
 
-![plot](./img/cover.png)
+![Graphical overview of the left atrial unfolding pipeline](./img/cover.png)
 
 Author: Georgios Rovas
 
