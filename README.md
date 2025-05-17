@@ -14,7 +14,7 @@ from CFD or FEM analyses.
 
 This software was used for the following publication:
 
-> Left atrial wall shear stress distribution correlates with atrial endocardial electrogram voltage and fibrosis in patients with atrial fibrillation. Adamopoulos, D., Rovas, G., Johner, N., Müller, H., Deux, J.-F., Crowe, L.A., Vallée, J.-P., Mach, F., Stergiopulos, N., Shah, D. 2024. medRxiv 2024.07.11.24310174. https://doi.org/10.1101/2024.07.11.24310174
+> Adamopoulos, D., Rovas, G., Johner, N. et al. Left atrial wall shear stress correlates with fibrosis in patients with atrial fibrillation. Nature Cardiovascular Research (2025). https://doi.org/10.1038/s44161-025-00651-z
 
 Please cite this reference if you are using the software.
 
@@ -219,7 +219,7 @@ It can be used to generate overlayed contour+line plots ("paired") and scatterpl
 
 v2. https://github.com/g-rov/lausm
 
-> Left atrial wall shear stress distribution correlates with atrial endocardial electrogram voltage and fibrosis in patients with atrial fibrillation. Adamopoulos, D., Rovas, G., Johner, N., Müller, H., Deux, J.-F., Crowe, L.A., Vallée, J.-P., Mach, F., Stergiopulos, N., Shah, D. 2024. medRxiv 2024.07.11.24310174. https://doi.org/10.1101/2024.07.11.24310174
+> Adamopoulos, D., Rovas, G., Johner, N. et al. Left atrial wall shear stress correlates with fibrosis in patients with atrial fibrillation. Nature Cardiovascular Research (2025). https://doi.org/10.1038/s44161-025-00651-z
 
 Changelog:
 - Added Windows support.
@@ -236,6 +236,20 @@ v1. https://github.com/catactg/sum
 > J Interv Card Electrophysiol. 2017 Sep 7. doi: 10.1007/s10840-017-0281-3.
 
 Please cite these references when using this code.
+
+## Citation
+
+```
+@article{AdamRovas2025,
+author = {Adamopoulos, Dionysios and Rovas, Georgios and Johner, Nicolas and Müller, Hajo and Deux, Jean-François and Crowe, Lindsey A. and Vallée, Jean-Paul and Mach, François and Stergiopulos, Nikolaos and Shah, Dipen},
+title = {Left atrial wall shear stress correlates with fibrosis in patients with atrial fibrillation},
+journal = {Nature Cardiovascular Research},
+month = may,
+year = {2025},
+url = {https://www.nature.com/articles/s44161-025-00651-z},
+doi = {10.1038/s44161-025-00651-z},
+}
+```
 
 ## License
 
