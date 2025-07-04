@@ -108,7 +108,7 @@ vmtksurfaceviewer -ifile ./currents_build/test/output.vtk
 
 If you encounter errors during this process please read `currents_build/README` for additional instructions.
 
-If compliled with the instructions above, there is no need to change `CURRENTS_BUILD_PATH` in `constants.py`.
+If compiled with the instructions above, there is no need to change `CURRENTS_BUILD_PATH` in `constants.py`.
 
 ## Test installation
 
